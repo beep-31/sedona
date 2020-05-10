@@ -1,4 +1,3 @@
-// out: false
 
 .page-header{
     font-weight: 700;
@@ -24,10 +23,11 @@
 }
 
 .page-header__nav{
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: 60px;
     left: 0px;
+    transition: 0.4s linear;
 }
 
 .page-header__burger{
@@ -47,6 +47,7 @@
     height: 4px;
     position: relative;
     background-color: #81b3d2;
+    transition: 0.1s linear;
     &::after{
         display: block;
         content: "";
@@ -69,6 +70,27 @@
     }
 }
 
+.burger-item--opened{
+    display: flex;
+    width: 23px;
+    height: 4px;
+    position: relative;
+    background-color: #81b3d2;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    transition: 0.1s linear;
+    &::after{
+        content: "";
+        display: block;
+        width: 23px;
+        height: 4px;
+        position: absolute;
+        background-color: #81b3d2;
+        transform: rotate(90deg);
+        border-radius: 2px;
+    }
+}
+
 .nav-list{
     padding: 0;
     display: flex;
@@ -77,14 +99,31 @@
 
 .nav-list__item{
     text-align: center;
-    width: 100vw !important;
+    width: 100vw;
     padding: 21px 0px;
     font-size: 18px;
     background-color: #81b3d2;
+    border-bottom: 2px solid #678fa8;
+    border-top: 2px solid #9ac2db;
+    transition: 0.05s linear;
+    &:last-child{
+        border-bottom: none;
+    }
+    &:first-child{
+        border-top: none;
+    }
+
+    &:hover{
+        background-color: #669ec0;
+    }
 }
 
 .nav-list__item a{
+    transition: 0.1s linear;
     color: #fff;
+    &:hover{
+        color: #81b3d2;
+    }
 }
 
 
@@ -94,8 +133,8 @@
     }
 
     .page-header__wrapper{
-        justify-content: unset;
-        max-width: @tablet-wrapper;
+
+        max-width: @tablet-width;
         width: 100%;
         margin: 0 auto;
     }
@@ -104,6 +143,9 @@
         display: block;
         position: static;
         order: 1;
+        float: left;
+        width: 100%;
+        opacity: 1 !important;
     }
 
     .nav-list{
@@ -114,17 +156,33 @@
     .nav-list__item{
         background-color: transparent;
         font-size: 14px;
+        width: 100px;
+        border: none;
         &--right{
-            float: right;
+            text-align: right;
         }
 
         &--left{
-            float: left;
+            text-align: left;
+        }
+
+        &:hover{
+            background-color: transparent;
         }
     }
 
     .nav-list__item a{
         color: black;
         font-size: 14px;
+    }
+}
+
+@media(min-width: @desktop-width){
+    .page-header__wrapper{
+        max-width: @desktop-wrapper;
+    }
+
+    .page-header__logo{
+        margin-left: -93px;
     }
 }

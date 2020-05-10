@@ -13,13 +13,13 @@
                 <picture>
                     <source media="(min-width:1280px)" srcset="../img/header/logotype-desktop.png">
                     <source media="(min-width:768px)" srcset="../img/header/logotype-tablet.png">
-                    <img src="../img/header/logotyle-mobile.png" alt="sedona-logo">
+                    <img src="../img/header/logotype-mobile.png" alt="sedona-logo">
                 </picture>
             </div>
             <div class="page-header__burger">
-                <div class="burger-item burger-item--closed"></div>
+                <div class="burger-item burger-item--closed" id="burger"></div>
             </div>
-            <div class="page-header__nav">
+            <div class="page-header__nav" id="header-nav">
                 <ul class="nav-list">
                     <li class="nav-list__item nav-list__item--left"><a href="">Main</a></li>
                     <li class="nav-list__item nav-list__item--left"><a href="">Photo</a></li>
@@ -29,5 +29,18 @@
             </div>
         </div>
     </header>
+    <section class="intro">
+        <div class="intro__wrapper">
+            <div class="intro__title">
+                <picture>
+                    <source media="(min-width:1280px)" srcset = "../img/intro/text-desktop.png">
+                    <source media="(min-width:768px)" srcset = "../img/intro/text-tablet.png">
+                    <img src="../img/intro/text-mobile.png" alt="Sedona"> 
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/header.js"></script>
 </body>
 </html>

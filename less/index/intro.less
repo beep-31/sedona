@@ -1,0 +1,25 @@
+//main: ../../css/index.less
+
+.intro{
+    background-image: url("../../img/intro/bg/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0px;
+}
+
+.intro__title{
+    text-align: center;
+}
+
+@media (min-width: @tablet-width){
+    .intro{
+        background-image: url("../../img/intro/bg/back-tablet.jpg");
+    }
+}
+
+@media (min-width: @desktop-width){
+    .intro{
+        background-image: url("../../img/intro/bg/back-desktop.jpg");
+    }
+}
