@@ -6,20 +6,32 @@
     background-size: cover;
     background-position: center center;
     padding: 90px 0px;
+    position: relative;
 }
 
 .intro__title{
     text-align: center;
 }
 
+.intro__triangle img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 @media (min-width: @tablet-width){
     .intro{
         background-image: url("../../img/intro/bg/back-tablet.jpg");
+        padding-top: 80px;
+        padding-bottom: 100px;
     }
 }
 
 @media (min-width: @desktop-width){
     .intro{
         background-image: url("../../img/intro/bg/back-desktop.jpg");
+        padding-top: 77px;
+        padding-bottom: 90px;
     }
 }
