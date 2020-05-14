@@ -26,8 +26,14 @@
     background-color: #81b3d2;
     margin-left: 6px;
     padding: 15px;
+    transition: 0.1s linear;
+    cursor: pointer;
     &--twitter{
         margin-left: 0px;
+    }
+
+    &:hover{
+        background-color: #669ec0;
     }
 }
 
@@ -51,5 +57,21 @@
         background-color: transparent;
         color: black;
         border-color: #81b3d2;
+    }
+}
+
+@media (min-width:@tablet-width){
+    .footer__wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__hashtag{
+        margin-bottom: 0px;
+    }
+
+    .footer__social{
+        margin-bottom: 0px;
     }
 }
