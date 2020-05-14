@@ -432,7 +432,7 @@ li {
   font-weight: 700;
 }
 .map__img {
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 .map__img img {
@@ -456,6 +456,12 @@ li {
   .map__img__marker img {
     top: 46.5%;
     left: 47.5%;
+  }
+}
+@media (min-width: 1280px) {
+  .map__img__marker img {
+    top: 46%;
+    left: 48.8%;
   }
 }
 .footer {
@@ -520,5 +526,16 @@ li {
   }
   .footer__social {
     margin-bottom: 0px;
+  }
+}
+@media (min-width: 1280px) {
+  html {
+    background-color: #f2f2f2;
+  }
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
   }
 }
