@@ -1,0 +1,48 @@
+// main : ../../css/photo.less
+
+.video__intro{
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.video__title{
+    margin-bottom: 15px;
+}
+
+.video__description{
+    margin-bottom: 40px;
+}
+
+.video__inner{
+    width: 320px;
+    height: 201px;
+    margin: 0 auto;
+}
+
+.video__inner iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:@tablet-width){
+    .video__intro{
+        max-width: 450px;
+    }
+
+    .video__inner{
+        width: 648px;
+        height: 500px;
+        margin-bottom: 55px;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .video__inner{
+        width: 800px;
+        height: 500px;
+        margin-bottom: 85px;
+    }
+}
