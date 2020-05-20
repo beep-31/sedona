@@ -62,10 +62,10 @@ li {
 .page-header__nav {
   opacity: 0;
   position: absolute;
-  top: 60px;
+  top: 57px;
   left: 0px;
-  transition: 0.4s linear;
-  z-index: 100;
+  transition: 0.3s linear;
+  z-index: -10;
 }
 .page-header__burger {
   order: 1;

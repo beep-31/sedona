@@ -6,10 +6,12 @@ let closed = 'burger-item--closed',
 burger.addEventListener('click', function(){
     if(nav.style.opacity==0){
         nav.style.opacity = 1;
+        nav.style.zIndex = 100;
         burger.classList.remove(closed);
         burger.classList.add(opened);
     } else{
         nav.style.opacity = 0;
+        nav.style.zIndex = -10;
         burger.classList.remove(opened);
         burger.classList.add(closed);
     }
