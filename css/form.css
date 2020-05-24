@@ -123,6 +123,7 @@
     margin: 0 auto;
   }
   .page-header__nav {
+    z-index: 100;
     display: block;
     position: static;
     order: 1;
@@ -271,13 +272,16 @@ li {
 .page-main {
   text-transform: uppercase;
 }
+.main__intro {
+  max-width: 280px;
+  margin: 0 auto;
+}
 .intro__title {
   margin-top: 40px;
   margin-bottom: 20px;
 }
 .intro__description {
-  max-width: 280px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -320,7 +324,7 @@ hr {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 320px;
+  max-width: 280px;
   margin: 0 auto;
 }
 .input__contact svg {
@@ -328,7 +332,7 @@ hr {
   height: 20px;
 }
 .input__contact label {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 10px;
   font-size: 14px;
 }
@@ -336,7 +340,6 @@ hr {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   width: 100%;
-  max-width: 280px;
   margin: 0 auto;
   margin-bottom: 10px;
   border: none;
@@ -351,7 +354,7 @@ hr {
 .input__contact i {
   position: absolute;
   top: 30%;
-  left: 78%;
+  left: 81%;
   padding: 16px;
   background-color: #e6e6e6;
 }
@@ -508,6 +511,98 @@ textarea::placeholder {
   font-size: 21px;
   font-weight: 700;
   padding: 18px 0px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.send-btn:hover {
+  background-color: #669ec0;
+}
+@media (min-width: 768px) {
+  .main__intro {
+    max-width: 440px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .visually_hidden {
+    display: none;
+  }
+  .main__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 648px;
+    margin: 0 auto;
+  }
+  .main__input {
+    border-top: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+  }
+  .main__input--name {
+    border-top: none;
+    width: 50%;
+    order: 1;
+  }
+  .main__input--radio {
+    border-top: none;
+    width: 50%;
+    order: 2;
+  }
+  .main__input--contact {
+    width: 100%;
+    order: 3;
+  }
+  .main__input--checkbox {
+    width: 100%;
+    order: 4;
+  }
+  .main__input--textarea {
+    width: 100%;
+    order: 5;
+  }
+  .input__contact {
+    max-width: 648px;
+  }
+  .input__contact i {
+    left: 92%;
+  }
+  .main__input__title {
+    background-color: #fff;
+    padding: 0px 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+  .input__checkbox__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .input__checkbox {
+    width: 50%;
+    margin-bottom: 60px;
+    margin-left: 43px;
+  }
+  .input__textarea {
+    max-width: 648px;
+  }
+  .visually_shown {
+    display: block;
+  }
+  .send__button {
+    flex-direction: row;
+    max-width: 648px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .send-btn {
+    width: 324px;
+  }
+}
+@media (min-width: 1280px) {
+  .main__inner {
+    max-width: 1200px;
+  }
 }
 .intro {
   background-image: url("../../img/photo/intro/back-mobile.jpg");
