@@ -123,7 +123,7 @@
             </div>
             <form action="">
                 <div class="main__inner">
-                    <div class="main__input__name">
+                    <div class="main__input main__input--name">
                         <hr class="visiually_hidden">
                         <div class="main__input__title">
                             <h3>Introduce yourself</h3>
@@ -141,7 +141,7 @@
                             <input type="text" name="middle-name">
                         </div>
                     </div>
-                    <div class="main__input__contact">
+                    <div class="main__input main__input--contact">
                         <hr class="visually_hidden">
                         <div class="main__input__title">
                            <h3>Contact information</h3>
@@ -157,7 +157,7 @@
                             <i class="icon icon--phone"><svg><use xlink:href="#mail"></svg></i>
                         </div>
                     </div>
-                    <div class="main__input__radio">
+                    <div class="main__input main__input--radio">
                         <hr class="visually_hidden">
                         <div class="main__input__title main__input__title--radio"><h3>Your emotions:</h3></div>
                         <div class="input__radio">
@@ -173,7 +173,7 @@
                             <label for="not_sure">Not sure</label>
                         </div>
                     </div>
-                    <div class="main__input__checkbox">
+                    <div class="main__input main__input--checkbox">
                         <hr class="visually_hidden">
                         <div class="main__input__title main__input__title--checkbox"><h3>Visited attractions</h3></div>
                         <div class="input__checkbox__inner">
@@ -195,10 +195,49 @@
                             </div>
                         </div>
                     </div>
+                    <div class="main__input main__input--textarea">
+                        <hr class="visually_hidden">
+                        <div class="main__input__title"><h3>Describe your emotions</h3></div>
+                        <div class="input__textarea">
+                            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Describe your emotions in detail"></textarea>
+                        </div>
+                        <div class="send__button">
+                            <button type="submit" class="send-btn">Send feedback</button>
+                            <p class="visually_shown">* - Required fields</p>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__hashtag">
+                <h3>#VISITSEDONA</h3>
+            </div>
+            <div class="footer__social">
+                <a href="" class="social__icon social__icon--twitter">
+                    <svg>
+                        <use xlink:href="#twitter">
+                    </svg>
+                </a>
+                <a href="" class="social__icon social__icon--facebook">
+                    <svg>
+                        <use xlink:href="#facebook">
+                    </svg>
+                </a>
+                <a href="" class="social__icon social__icon--youtube">
+                    <svg>
+                        <use xlink:href="#youtube">
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__dev">
+                <p>Developed by <span class="beep">beep-31</span></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="../scripts/header.js"></script>
 </body>
