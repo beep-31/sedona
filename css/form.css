@@ -311,7 +311,6 @@ hr {
   font-size: 14px;
 }
 .input__name input {
-  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   max-width: 230px;
   border: none;
@@ -584,14 +583,14 @@ textarea::placeholder {
     margin-left: 43px;
   }
   .input__textarea {
-    max-width: 648px;
+    width: 100%;
   }
   .visually_shown {
     display: block;
   }
   .send__button {
     flex-direction: row;
-    max-width: 648px;
+    min-width: 100%;
     justify-content: space-between;
     align-items: center;
   }
@@ -600,8 +599,68 @@ textarea::placeholder {
   }
 }
 @media (min-width: 1280px) {
+  .main__intro {
+    margin-top: 80px;
+  }
   .main__inner {
-    max-width: 1200px;
+    max-width: 960px;
+  }
+  .main__input__title--radio {
+    margin-bottom: 53px;
+  }
+  .input__name {
+    max-width: 400px;
+    justify-content: space-evenly;
+  }
+  .input__contact__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .input__contact {
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 400px;
+  }
+  .input__contact input {
+    max-width: 320px;
+  }
+  .input__contact i {
+    left: 87%;
+    top: 0%;
+  }
+  .main__input {
+    border-top: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+  }
+  .main__input--name {
+    border-top: none;
+    width: 50%;
+    order: 2;
+  }
+  .main__input--radio {
+    border-top: none;
+    width: 50%;
+    order: 1;
+  }
+  .input__checkbox {
+    width: 25%;
+    margin-left: 0px;
+    margin-bottom: 32px;
+  }
+  .input__checkbox label::before {
+    left: -80px;
+  }
+  .input__checkbox label::after {
+    left: -65px;
+  }
+  .input__textarea {
+    max-width: 960px;
+  }
+  .send-btn {
+    width: 480px;
   }
 }
 .intro {
