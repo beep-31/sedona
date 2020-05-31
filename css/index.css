@@ -62,7 +62,7 @@ li {
 .page-header__nav {
   opacity: 0;
   position: absolute;
-  top: 57px;
+  top: 56px;
   left: 0px;
   transition: 0.3s linear;
   z-index: -10;
@@ -138,9 +138,6 @@ li {
   border-bottom: 2px solid #678fa8;
   border-top: 2px solid #9ac2db;
   transition: 0.05s linear;
-}
-.nav-list__item:last-child {
-  border-bottom: none;
 }
 .nav-list__item:first-child {
   border-top: none;

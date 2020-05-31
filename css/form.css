@@ -20,7 +20,7 @@
 .page-header__nav {
   opacity: 0;
   position: absolute;
-  top: 57px;
+  top: 56px;
   left: 0px;
   transition: 0.3s linear;
   z-index: -10;
@@ -96,9 +96,6 @@
   border-bottom: 2px solid #678fa8;
   border-top: 2px solid #9ac2db;
   transition: 0.05s linear;
-}
-.nav-list__item:last-child {
-  border-bottom: none;
 }
 .nav-list__item:first-child {
   border-top: none;
@@ -571,6 +568,9 @@ textarea::placeholder {
     margin-top: -10px;
     margin-bottom: 30px;
   }
+  .main__input__title--radio {
+    margin-bottom: 50px;
+  }
   .input__checkbox__inner {
     display: flex;
     flex-wrap: wrap;
@@ -608,6 +608,9 @@ textarea::placeholder {
   .main__input__title--radio {
     margin-bottom: 53px;
   }
+  .input__radio {
+    margin-bottom: 56px;
+  }
   .input__name {
     max-width: 400px;
     justify-content: space-evenly;
@@ -616,6 +619,10 @@ textarea::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 40px 0px;
+  }
+  .input__checkbox__inner {
+    padding: 40px 0px;
   }
   .input__contact {
     width: 50%;
